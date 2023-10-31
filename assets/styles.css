@@ -15,14 +15,14 @@
 
 @font-face {
   font-family: PetcoCircularTT-Regular;
-  src: url(fonts/PetcoCircularTT-Regular.woff2) format("woff2"),
-    url(fonts/PetcoCircularTT-Regular.woff) format("woff");
+  src: url(assets/fonts/PetcoCircularTT-Regular.woff2) format("woff2"),
+    url(assets/fonts/PetcoCircularTT-Regular.woff) format("woff");
 }
 
 @font-face {
   font-family: PetcoCircularTT-Bold;
-  src: url(fonts/PetcoCircularTT-Bold.woff2) format("woff2"),
-    url(fonts/PetcoCircularTT-Bold.woff) format("woff");
+  src: url(assets/fonts/PetcoCircularTT-Bold.woff2) format("woff2"),
+    url(assets/fonts/PetcoCircularTT-Bold.woff) format("woff");
 }
 
 /* default css */
@@ -446,7 +446,16 @@ a:hover {
   border-radius: 8px;
   border: none;
 }
-
+#insta-front-logo {
+  position: absolute;
+  width: 70%;
+  height: 10%;
+  left: 8px;
+  bottom: 18px;
+}
+#insta-front-logo img{
+  width: 220px;
+}
 @media all and (min-width: 1100px) and (max-width: 1300px) {
   .citrusConairSpotlight__heroImage-copy {
     width: 40%;
@@ -557,7 +566,7 @@ a:hover {
   }
   .citrusConairSpotlight .hero-area {
     position: absolute;
-    top: 40px;
+    top: 20px;
     text-align: center;
   }
 
@@ -575,18 +584,22 @@ a:hover {
         -ms-flex-align: center;
             align-items: center;
     margin: 0 auto;
+    max-width: 485px;
 }
 .spotlightConairCopy {
   margin: 2px auto;
 }
   .spotlightConairCopy h1 {
-    font-size: 24px;
-    line-height: 27px;
+    font-size: 21px;
+    line-height: 21px;
   }
   
   .spotlightConairCopy p {
-    font-size: 14px;
-    line-height: 16px;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 600;
+    max-width: 224px;
+    margin: 0 auto;
   }
   .spotlightConairCopy h1 sup {
     font-size: 16px;
@@ -664,6 +677,7 @@ a:hover {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+            margin-top: 5px;
   }
   .citrusConairSpotlight__faqRow {
     display: -ms-grid;
@@ -813,7 +827,15 @@ a:hover {
   border-radius: 8px;
   border: none;
 }
-
+#insta-front-logo {
+  position: absolute;
+  width: 73%;
+  left: 2%;
+  bottom: 4%;
+}
+#insta-front-logo img {
+  width: 100%;
+}
 
 }
 
@@ -834,14 +856,10 @@ a:hover {
     display: none;
   }
   .spotlightConairCopy h1 {
-    font-size: 32px;
-    line-height: 35px;
-  }
-  .spotlightConairCopy p {
-    margin-top: 10px;
-    font-size: 18px;
+    font-size: 21px;
     line-height: 21px;
   }
+  
   .citrusConair__iframe iframe {
     min-width: 100%;
     min-height: 300px;
@@ -849,8 +867,9 @@ a:hover {
     border: none;
 }
 
+
 }
-@media all and (max-width: 375px) {
+@media all and (max-width: 475px) {
   /* hero banner Start */
   .citrusConairSpotlight__heroImage-copy {
     width: 80%;
@@ -860,24 +879,13 @@ a:hover {
     top: 20px;
     text-align: center;
   }
-  .spotlightConairCopy h1 {
-    font-size: 18px;
-    line-height: 18px;
-  }
-  .spotlightConairCopy p {
-    font-size: 12px;
-    line-height: 13px;
-  }
-  .spotlightConairCopy h1 sup {
-    font-size: 10px;
-  }
-  .spotlightConairCopy p sup {
-    font-size: 7px;
-  }
+
   /* hero banner end*/
 
   .citrusConair__video {
     margin: 15px auto 15px;
   }
-
+  .citrusConairSpotlight__mobile-version {
+    margin-top: 25px;
+}
 }
