@@ -598,7 +598,7 @@ a:hover {
     font-size: 16px;
     line-height: 18px;
     font-weight: 600;
-    max-width: 224px;
+    max-width: 232px;
     margin: 0 auto;
   }
   .spotlightConairCopy h1 sup {
@@ -774,6 +774,7 @@ a:hover {
   .citrusConair__video
   {
     width: 95%;
+    margin: 20px auto 40px;
   }
   .citrusConair__videoRow {
     -ms-grid-rows: 1fr;
@@ -830,8 +831,8 @@ a:hover {
 #insta-front-logo {
   position: absolute;
   width: 73%;
-  left: 2%;
-  bottom: 4%;
+  left: 3.5%;
+  bottom: 3.5%;
 }
 #insta-front-logo img {
   width: 100%;
