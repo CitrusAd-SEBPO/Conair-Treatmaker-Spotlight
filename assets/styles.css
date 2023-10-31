@@ -566,7 +566,7 @@ a:hover {
   }
   .citrusConairSpotlight .hero-area {
     position: absolute;
-    top: 20px;
+    top: 30px;
     text-align: center;
   }
 
@@ -600,6 +600,7 @@ a:hover {
     font-weight: 600;
     max-width: 232px;
     margin: 0 auto;
+    padding-top: 20px;
   }
   .spotlightConairCopy h1 sup {
     font-size: 16px;
@@ -872,13 +873,8 @@ a:hover {
 }
 @media all and (max-width: 475px) {
   /* hero banner Start */
-  .citrusConairSpotlight__heroImage-copy {
-    width: 80%;
-  }
   .citrusConairSpotlight .hero-area {
-    position: absolute;
     top: 20px;
-    text-align: center;
   }
 
   /* hero banner end*/
