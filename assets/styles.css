@@ -458,6 +458,138 @@ a:hover {
 #insta-front-logo img{
   width: 220px;
 }
+
+/* Video Popup */
+.citrus-full-wrapper .citrus-yt-video {
+  position: relative;
+}
+
+.citrus-full-wrapper .citrus-yt-video button,
+.citrus-full-wrapper .citrus-yt-video button:focus-visible {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.citrus-full-wrapper .show-video {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #fff;
+  box-shadow: 2px 2px 10px 0px rgb(166 161 161 / 85%);
+  padding: 10px;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.citrus-full-wrapper .show-video span {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  z-index: 99999;
+  color: #333;
+  background: #fff;
+  width: 20px;
+  border-radius: 50%;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #efefef;
+  font-size: 20px;
+  padding: 1px 0 0;
+  cursor: pointer;
+}
+
+.citrus-full-wrapper .show-video span:hover {
+  color: #fff;
+  background: #e4425c;
+  border: 1px solid #e4425c;
+}
+
+.citrus-full-wrapper .show-video iframe {
+  width: 100%;
+  min-height: 180px;
+}
+
+.citrus-full-wrapper .education-single-item .show-video iframe {
+  min-height: 225px;
+}
+
+.citrus-full-wrapper .citrus-upgrade-video-area .show-video {
+  top: -30px;
+}
+
+.citrus-full-wrapper .citrus-upgrade-video-area .show-video iframe {
+  min-height: 280px;
+}
+
+.citrus-full-wrapper .citrus-bg-sky .show-video iframe {
+  min-height: 270px;
+}
+
+.citrus-benefits-single-item .citrus-yt-video {
+  position: relative;
+}
+
+.citrus-benefits-single-item .citrus-yt-video button,
+.citrus-benefits-single-item .citrus-yt-video button:focus-visible {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.citrus-benefits-single-item .show-video {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #fff;
+  box-shadow: 2px 2px 10px 0px rgb(166 161 161 / 85%);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.citrus-benefits-single-item .show-video span {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  z-index: 99999;
+  color: #333;
+  background: #fff;
+  width: 20px;
+  border-radius: 50%;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #efefef;
+  font-size: 20px;
+  padding: 1px 0 0;
+  cursor: pointer;
+}
+
+.citrus-benefits-single-item .show-video span:hover {
+  color: #fff;
+  background: #e4425c;
+  border: 1px solid #e4425c;
+}
+
+.citrus-benefits-single-item .show-video iframe {
+  width: 100%;
+  min-height: 180px;
+}
+
+.citrus-benefits-single-item .show-video iframe {
+  width: 100%;
+  min-height: 180px;
+}
+
+
 @media all and (min-width: 1100px) and (max-width: 1300px) {
   .citrusConairSpotlight__heroImage-copy {
     width: 40%;
