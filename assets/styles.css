@@ -574,8 +574,7 @@ a:hover {
 }
 
 .citrusConairSpotlight .show-video iframe {
-  width: 100%;
-  min-height: 220px;
+  min-height: 100%;
 }
 
 .citrusConairSpotlight .education-single-item .show-video iframe {
@@ -879,12 +878,6 @@ a:hover {
             margin-top: 5px;
   }
 
-  .citrusConair_top_video img {
-    max-width: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-    min-height: 100%;
-  }
   .citrusConairSpotlight__faqRow {
     display: -ms-grid;
     display: grid;
@@ -901,7 +894,7 @@ a:hover {
 
   .citrusConairSpotlight__faqImage-box {
       text-align: center;
-      width: 140%;
+      width: 890px;
       overflow-x: auto;
       display: -webkit-box;
       display: -ms-flexbox;
@@ -918,7 +911,10 @@ a:hover {
     max-width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
-    min-height: 100%;
+}
+.citrusConairSpotlight__faqImage-box .citrusConairFaq__iframe img
+{
+  margin-top: 2px;
 }
   /* Hide scrollbar for Chrome, Safari and Opera */
   .citrusConairSpotlight__faqLeft::-webkit-scrollbar {
@@ -932,11 +928,11 @@ a:hover {
   }
 
   .citrusConair__banner {
-      width: 70%;
+      width:440px;
       padding-bottom: 0;
   }
   .citrusConairFaq__iframe {
-      width: 70%;
+    width:440px;
   }
 
   /* section cta style */
@@ -993,21 +989,60 @@ a:hover {
     -ms-grid-column: 1;
   }
 
-  .citrusConair__iframe {
-    /* text-align: center;
-    width: 100%; */
+  .citrusConair_top_video img {
+    max-width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    min-height: 440px;
   }
-  .citrusConairSpotlight .show-video-top
-{
-  background-color: #fff;
-}
-  .citrusConairSpotlight .show-video-top iframe {
-    width: 100%;
-      min-height: 396px;
-      background-color: #000 !important;
-      margin-top: 0px;
-      border-radius: 9px;
-  }
+
+.citrusConairSpotlight .citrusConairSpotlight-yt-video button,
+        .citrusConairSpotlight .citrusConairSpotlight-yt-video button:focus-visible{
+            background: none;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 0;
+        }
+        .citrusConairSpotlight .show-video-top{
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: #fff;
+            box-shadow: 2px 2px 10px 0px rgb(166 161 161 / 85%);
+            padding: 10px;
+            border-radius: 10px;
+            width: 100%;
+        }
+        .citrusConairSpotlight .show-video-top span{
+            position: absolute;
+            right: 5px;
+            top: 5px;
+            z-index: 99999;
+            color: #333;
+            background: #fff;
+            width: 20px;
+            border-radius: 50%;
+            height: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #efefef;
+            font-size: 20px;
+            padding: 1px 0 0;
+            cursor: pointer;
+        }
+        .citrusConairSpotlight .show-video-top span:hover{
+            color: #fff;
+            background: #e4425c;
+            border: 1px solid #e4425c;
+        }
+        .citrusConairSpotlight .show-video-top iframe{
+            width: 100%;
+            min-height: 440px;
+        }
+
 
 .citrusConair__videoText {
   min-height: 200px;
@@ -1030,6 +1065,44 @@ a:hover {
 .citrusConairFaq__iframe {
   position: relative;
 }
+.citrusConairSpotlight .show-video{
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #fff;
+  box-shadow: 2px 2px 10px 0px rgb(166 161 161 / 85%);
+  padding: 10px;
+  border-radius: 10px;
+  width: 100%;
+}
+.citrusConairSpotlight .show-video span{
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  z-index: 99999;
+  color: #333;
+  background: #fff;
+  width: 20px;
+  border-radius: 50%;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #efefef;
+  font-size: 20px;
+  padding: 1px 0 0;
+  cursor: pointer;
+}
+.citrusConairSpotlight .show-video span:hover{
+  color: #fff;
+  background: #e4425c;
+  border: 1px solid #e4425c;
+}
+.citrusConairSpotlight .show-video iframe{
+  width: 100%;
+  min-height: 440px;
+}
 .citrusConairFaq__iframe iframe {
   width: 100%;
   min-width: 100%;
@@ -1038,16 +1111,17 @@ a:hover {
   border-radius: 8px;
   border: none;
 }
-#insta-front-logo {
-  position: absolute;
-  width: 73%;
-  left: 3.5%;
-  bottom: 3.5%;
+.citrusConairSpotlight .show-video iframe {
+  min-height: 472px;
 }
-#insta-front-logo img {
-  width: 100%;
 }
-
+@media all and (min-width: 755px) and (max-width: 768px) {
+  .citrusConair_top_video img {
+    padding: 3px;
+    width:100% !important;
+    display: block;
+}
+ 
 }
 
 @media all and (max-width: 425px) {
@@ -1055,7 +1129,28 @@ a:hover {
   .citrusConairSpotlight__mobile-version {
     margin-top: 25px;
   }
+  .citrusConair_top_video img {
+    min-height: 340px;
+  }
+  .citrusConairSpotlight .show-video-top iframe {
+    width: 100%;
+    min-height: 340px;
+  }
+  .citrusConairSpotlight .show-video iframe {
+    min-height: 315px;
 }
+  .citrusConairSpotlight__faqImage-box {
+    width: 610px;
+}
+  .citrusConair__banner {
+    width:300px;
+    padding-bottom: 0;
+  }
+  .citrusConairFaq__iframe {
+    width:300px;
+  }
+}
+
 @media all and (max-width: 320px) {
   /* hero banner Start */
   .citrusConairSpotlight .hero-area {
@@ -1084,8 +1179,28 @@ a:hover {
   }
 
   /* hero banner end*/
-
   .citrusConair__video {
     margin: 15px auto 15px;
   }
+  .citrusConair_top_video img {
+    min-height: 280px;
+  }
+  .citrusConairSpotlight .show-video-top iframe {
+    width: 100%;
+    min-height: 280px;
+  }
+  .citrusConairSpotlight__faqImage-box {
+    width: 570px;
+  }
+  .citrusConairSpotlight .show-video iframe {
+    min-height: 306px;
+  }
+  .citrusConair__banner {
+    width:280px;
+    padding-bottom: 0;
+  }
+  .citrusConairFaq__iframe {
+    width:280px;
+  }
+  
 }
