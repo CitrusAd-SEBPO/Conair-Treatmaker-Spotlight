@@ -214,15 +214,34 @@ a:hover {
   max-width: 100%;
   padding-bottom: 20px;
 }
+.citrusConair_top_video
+{
+  width: 370px;
+  max-width: 100%;
+  border-radius: 8px;
+  border: none;
+}
+.citrusConair_top_video img {
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  min-height: 100%;
+}
+.citrusConair_top_vide img {
+  max-width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
 .citrusConair__iframe {
   position: relative;
 }
+
 .citrusConair__iframe iframe {
-  width: 358px;
+  /* width: 358px;
   max-width: 100%;
   height: 228px;
   border-radius: 8px;
-  border: none;
+  border: none; */
 }
 
 .citrusConair__videoText {
@@ -460,17 +479,61 @@ a:hover {
 }
 
 /* Video Popup */
-.citrusConairSpotlight .citrus-yt-video {
+.citrusConairSpotlight .citrusConairSpotlight-yt-video {
   position: relative;
 }
 
-.citrusConairSpotlight .citrus-yt-video button,
-.citrusConairSpotlight .citrus-yt-video button:focus-visible {
+.citrusConairSpotlight .citrusConairSpotlight-yt-video button,
+.citrusConairSpotlight .citrusConairSpotlight-yt-video button:focus-visible {
   background: none;
   border: none;
   outline: none;
   cursor: pointer;
   padding: 0;
+}
+
+.citrusConairSpotlight .show-video-top {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #fff;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.citrusConairSpotlight .show-video-top span {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  z-index: 99999;
+  color: #333;
+  background: #fff;
+  width: 20px;
+  border-radius: 50%;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #efefef;
+  font-size: 20px;
+  padding: 1px 0 0;
+  cursor: pointer;
+  display: none;
+}
+
+.citrusConairSpotlight .show-video-top span:hover {
+  color: #fff;
+  background: #e4425c;
+  border: 1px solid #e4425c;
+}
+
+.citrusConairSpotlight .show-video-top iframe {
+  width: 100%;
+    min-height: 238px;
+    background-color: #000 !important;
+    margin-top: 0px;
+    border-radius: 9px;
 }
 
 .citrusConairSpotlight .show-video {
@@ -479,9 +542,8 @@ a:hover {
   top: 0;
   left: 0;
   background: #fff;
-  box-shadow: 2px 2px 10px 0px rgb(166 161 161 / 85%);
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 5px;
   width: 100%;
 }
 
@@ -502,6 +564,7 @@ a:hover {
   font-size: 20px;
   padding: 1px 0 0;
   cursor: pointer;
+  display: none;
 }
 
 .citrusConairSpotlight .show-video span:hover {
@@ -512,7 +575,7 @@ a:hover {
 
 .citrusConairSpotlight .show-video iframe {
   width: 100%;
-  min-height: 180px;
+  min-height: 220px;
 }
 
 .citrusConairSpotlight .education-single-item .show-video iframe {
@@ -531,12 +594,12 @@ a:hover {
   min-height: 270px;
 }
 
-.citrus-benefits-single-item .citrus-yt-video {
+.citrus-benefits-single-item .citrusConairSpotlight-yt-video {
   position: relative;
 }
 
-.citrus-benefits-single-item .citrus-yt-video button,
-.citrus-benefits-single-item .citrus-yt-video button:focus-visible {
+.citrus-benefits-single-item .citrusConairSpotlight-yt-video button,
+.citrus-benefits-single-item .citrusConairSpotlight-yt-video button:focus-visible {
   background: none;
   border: none;
   outline: none;
@@ -759,6 +822,11 @@ a:hover {
     background: none;
     color: #fff;
   }
+
+  .citrusConair_top_video
+{
+  width: 100%;
+}
   /* faq section */
   
     .citrusConairSpotlight__faqRow {
@@ -809,6 +877,13 @@ a:hover {
         -ms-flex-pack: center;
             justify-content: center;
             margin-top: 5px;
+  }
+
+  .citrusConair_top_video img {
+    max-width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    min-height: 100%;
   }
   .citrusConairSpotlight__faqRow {
     display: -ms-grid;
@@ -919,15 +994,20 @@ a:hover {
   }
 
   .citrusConair__iframe {
-    text-align: center;
-    width: 100%;
+    /* text-align: center;
+    width: 100%; */
   }
-  .citrusConair__iframe iframe {
-    min-width: 100%;
-    min-height: 100%;
-    border-radius: 8px;
-    border: none;
+  .citrusConairSpotlight .show-video-top
+{
+  background-color: #fff;
 }
+  .citrusConairSpotlight .show-video-top iframe {
+    width: 100%;
+      min-height: 396px;
+      background-color: #000 !important;
+      margin-top: 0px;
+      border-radius: 9px;
+  }
 
 .citrusConair__videoText {
   min-height: 200px;
