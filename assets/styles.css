@@ -793,7 +793,6 @@ a:hover {
 }
 
 .citrusConair__videoText {
-  width: 100%;
   min-height: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -834,35 +833,11 @@ a:hover {
 
 }
 
-@media all and (min-width: 476px) and (max-width: 768px) {
-/* hero banner */
-  .citrusClorox__heroImage-copy {
-    width: 100%;
-    margin: auto 5%;
-    height: auto;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    text-align: center;
-    position: absolute;
-    top: 12%;
+@media all and (max-width: 425px) {
+  /* hero banner Start */
+  .citrusConairSpotlight__mobile-version {
+    margin-top: 25px;
   }
-  .citrusConairSpotlight__heroImage-copy .citrusConairSpotlight__mobile-version {
-    display: none;
-  }
-  .spotlightConairCopy h1 {
-    font-size: 21px;
-    line-height: 21px;
-  }
-  
-  .citrusConair__iframe iframe {
-    min-width: 100%;
-    min-height: 300px;
-    border-radius: 8px;
-    border: none;
-}
-
-
 }
 @media all and (max-width: 375px) {
   /* hero banner Start */
@@ -894,7 +869,4 @@ a:hover {
   .citrusConair__video {
     margin: 15px auto 15px;
   }
-  .citrusConairSpotlight__mobile-version {
-    margin-top: 25px;
-}
 }
