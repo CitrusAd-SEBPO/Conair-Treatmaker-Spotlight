@@ -1010,8 +1010,6 @@ a:hover {
             top: 0;
             left: 0;
             background: #fff;
-            box-shadow: 2px 2px 10px 0px rgb(166 161 161 / 85%);
-            padding: 10px;
             border-radius: 10px;
             width: 100%;
         }
@@ -1032,6 +1030,7 @@ a:hover {
             font-size: 20px;
             padding: 1px 0 0;
             cursor: pointer;
+            display:none;
         }
         .citrusConairSpotlight .show-video-top span:hover{
             color: #fff;
@@ -1040,7 +1039,7 @@ a:hover {
         }
         .citrusConairSpotlight .show-video-top iframe{
             width: 100%;
-            min-height: 440px;
+            min-height: 460px;
         }
 
 
@@ -1066,15 +1065,13 @@ a:hover {
   position: relative;
 }
 .citrusConairSpotlight .show-video{
-  display: none;
   position: absolute;
   top: 0;
   left: 0;
   background: #fff;
-  box-shadow: 2px 2px 10px 0px rgb(166 161 161 / 85%);
-  padding: 10px;
   border-radius: 10px;
   width: 100%;
+  padding: 0;
 }
 .citrusConairSpotlight .show-video span{
   position: absolute;
@@ -1093,6 +1090,7 @@ a:hover {
   font-size: 20px;
   padding: 1px 0 0;
   cursor: pointer;
+  display:none;
 }
 .citrusConairSpotlight .show-video span:hover{
   color: #fff;
@@ -1112,7 +1110,7 @@ a:hover {
   border: none;
 }
 .citrusConairSpotlight .show-video iframe {
-  min-height: 472px;
+  min-height: 494px;
 }
 }
 @media all and (min-width: 755px) and (max-width: 768px) {
@@ -1137,7 +1135,7 @@ a:hover {
     min-height: 340px;
   }
   .citrusConairSpotlight .show-video iframe {
-    min-height: 315px;
+    min-height: 338px;
 }
   .citrusConairSpotlight__faqImage-box {
     width: 610px;
@@ -1193,7 +1191,7 @@ a:hover {
     width: 570px;
   }
   .citrusConairSpotlight .show-video iframe {
-    min-height: 306px;
+    min-height: 315px;
   }
   .citrusConair__banner {
     width:280px;
